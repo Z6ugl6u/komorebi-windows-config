@@ -1,33 +1,70 @@
 # komorebi-windows-config
 
-Personal configuration for **komorebi**, a tiling window manager for Windows.
+Personal **komorebi** configuration for Windows with a clean tiling workflow, Dracula theme, and keyboard-driven navigation via **whkd**.
 
-This repository contains my daily-driver setup: layouts, rules, startup scripts and workflow tweaks to turn Windows into a usable tiling environment.
-
----
-
-## 🔧 What’s inside
-
-- `komorebi.json` – Main komorebi configuration
-- `komorebic.ps1` / `komorebic.cmd` – Startup & reload scripts
-- `whkdrc` – Keybindings configuration (if using whkd)
-- Window rules (apps, workspaces, floating behavior)
-- Custom layouts and monitor handling
+Opinionated setup. Designed for daily use on a single monitor.
 
 ---
 
-## 🚀 Requirements
+## 🎨 Theme & UI
+
+- **Bar theme**: Dracula (Base16)
+- **Font**: JetBrains Mono
+- **Accent**: Base08
+- **Borders**: Enabled
+  - Width: `8`
+  - Color: Red (focused), Dark red (unfocused)
+- **Window hiding**: Cloak
+
+---
+
+## 🖥 Monitor & Workspaces
+
+### Monitor 0
+
+| Workspace | Name | Layout |
+|---------|------|--------|
+| 1 | I | BSP |
+| 2 | II | VerticalStack |
+| 3 | III | HorizontalStack |
+| 4 | IV | UltrawideVerticalStack |
+| 5 | V | Rows |
+| 6 | VI | Grid |
+| 7 | VII | RightMainVerticalStack |
+
+- Default workspace padding: `20`
+- Default container padding: `20`
+
+---
+
+## ⌨ Keybindings (whkd)
+
+- **Focus**: `Alt + Arrow keys`
+- **Move windows**: `Alt + Shift + Arrow keys`
+- **Resize**: `Alt + +/-`
+- **Float toggle**: `Alt + T`
+- **Monocle**: `Alt + Shift + F`
+- **Workspaces**: `Alt + 1..7`
+- **Move to workspace**: `Alt + Shift + 1..7`
+- **Reload config**: `Alt + Shift + O`
+
+Shell required: **PowerShell**
+
+---
+
+## 📦 Requirements
 
 - Windows 10 / 11
 - [komorebi](https://github.com/LGUG2Z/komorebi)
-- (Optional) `whkd` for hotkeys
+- [whkd](https://github.com/LGUG2Z/whkd)
 - PowerShell
+- JetBrains Mono font installed
 
 ---
 
-## 📦 Installation
+## 🚀 Installation
 
-1. Install **komorebi**
-2. Clone this repository:
-   ```powershell
-   git clone https://github.com/<your-username>/komorebi-windows-config.git
+```powershell
+git clone https://github.com/<your-username>/komorebi-windows-config.git
+cd komorebi-windows-config
+.\komorebi.ps1

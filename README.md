@@ -65,6 +65,6 @@ Shell required: **PowerShell**
 ## 🚀 Installation
 
 ```powershell
-git clone https://github.com/<your-username>/komorebi-windows-config.git
+git clone https://github.com/Z6ugl6u/komorebi-windows-config.git
 cd komorebi-windows-config
 .\komorebi.ps1
